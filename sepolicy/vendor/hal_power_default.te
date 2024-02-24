@@ -16,5 +16,9 @@ allow hal_power_default{
     sysfs_devices_system_cpu
     sysfs_graphics
     sysfs_light
+    sysfs_input
     sysfs_sec_tsp
 }:file rw_file_perms;
+
+allow hal_power_default sysfs_sec_tsp:lnk_file { read };
+
