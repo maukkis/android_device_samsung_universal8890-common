@@ -1,3 +1,6 @@
 # priv_app.te
 
 dontaudit priv_app sysfs_android_usb:file open;
+
+allow priv_app rootfs:dir rw_dir_perms;
+allow priv_app vendor_default_prop:file r_file_perms;

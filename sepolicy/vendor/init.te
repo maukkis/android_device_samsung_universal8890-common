@@ -30,3 +30,5 @@ allow init fwk_sensor_hwservice:hwservice_manager find;
 allow init hidl_base_hwservice:hwservice_manager add;
 
 unix_socket_connect(init, property, rild)
+
+allow init sysfs:dir rw_dir_perms;
