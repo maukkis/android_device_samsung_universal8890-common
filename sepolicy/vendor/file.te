@@ -84,3 +84,4 @@ type sysfs_usb_supply, sysfs_type, fs_type, mlstrustedobject;
 
 # socket types
 type gps_socket, file_type;
+

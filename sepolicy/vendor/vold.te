@@ -16,4 +16,4 @@ allow vold {
 
 dontaudit vold hal_bootctl_hwservice:hwservice_manager find;
 
-allow vold rootfs:dir rw_dir_perms;
+allow vold rootfs:dir { create_dir_perms setattr rw_dir_perms };

@@ -1,5 +1,5 @@
 # system_server.te
-
+allow system_server vendor_default_prop:dir r_dir_perms;
 binder_call(system_server, gpsd)
 
 # used to access the fwk_sensor_hwservice over hwbinder
